@@ -92,53 +92,131 @@ main {
 /* teams styles */
 .teams-container {
     padding-left: 120px;
-    margin-bottom: 80px;
+    margin-bottom: 50px;
 }
+
 .teams-container {
     display: flex;
     align-items: center;
 }
+
 .teams-img-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
 }
+
 .teams-img-container img {
     width: 242px;
     height: 242px;
 }
+
 .teams-content {
     padding-left: 70px;
     padding-right: 70px;
 }
+
 .teams-title {
     font-size: 2.5rem;
     margin-bottom: 0px;
 }
+
 .teams-description {
     color: #727272;
     font-weight: 400;
     margin-top: 20px;
     margin-bottom: 10px;
 }
+
 .teams-title .quick-list {
     color: #727272;
     font-weight: 500;
 }
+
 .teams-title .our {
     color: #131313;
     font-weight: 700;
 }
+
 .teams-title .features {
     color: #FF900E;
     font-weight: 700;
 }
 
-/* Facts styles */
+/* features section style */
+.features {
+    display: flex;
+    gap: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+    align-items: center;
+}
+
+.feature-title {
+    color: #131313;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.feature-head {
+    margin-bottom: 50px;
+}
+
+.feature-head .feature-main-title {
+    margin-bottom: 30px;
+}
+
+.features .fact-title {
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+}
+
+.feature-content .card {
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.16);
+}
+
+.feature-img img {
+    width: 650px;
+    height: 900px;
+    margin-left: 50px;
+}
+
+.ten-year-badge {
+    border-radius: 8px;
+    background: #FF900E;
+    color: #FFF;
+    width: 280px;
+    height: 150px;
+    padding: 30px;
+    text-align: center;
+    position: relative;
+    bottom: 100px;
+
+}
+
+.ten-year-badge h2 {
+    font-size: 3.5rem;
+    margin-top: 15px;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.ten-year-badge p {
+    margin-top: 20px;
+    font-size: 1.5rem;
+}
+
+/* facts styles */
 .facts {
     margin-top: 0;
     margin-bottom: 100px;
 }
+
 .fact-title {
     color: #131313;
     font-size: 2.5rem;
@@ -150,6 +228,7 @@ main {
     margin-left: 100px;
     margin-top: 100px;
 }
+
 .facts-card-container {
     display: flex;
     justify-content: center;
@@ -157,6 +236,7 @@ main {
     gap: 60px;
     margin-top: 70px;
 }
+
 .facts-card-container .card {
     border-radius: 8px;
     border: 1px solid #FF900E;
@@ -165,12 +245,14 @@ main {
     text-align: center;
     padding: 30px;
 }
+
 .facts-card-container .card-title {
     color: #727272;
     font-size: 1.25rem;
     font-weight: 600;
     margin-top: 5px;
 }
+
 .facts-card-container .card-stats {
     font-size: 2.8rem;
     color: #424242;
@@ -182,9 +264,11 @@ main {
 .our-sponsor-container {
     text-align: center;
 }
+
 .our-sponsor-title {
     margin-bottom: 30px;
 }
+
 .sponsor-img-container {
     display: flex;
     justify-content: space-evenly;
@@ -193,21 +277,24 @@ main {
     margin-top: 50px;
     margin-bottom: 100px;
 }
+
 .sponsor-img-container img {
     width: 165px;
 }
 
 /* Footer Design style */
-.footer{
+.footer {
     margin-bottom: 80px;
 }
+
 .footer-area {
     border-radius: 8px;
     background: rgba(255, 144, 14, 0.10);
     padding: 10px 200px;
     margin: 0px 100px;
-   
+
 }
+
 .footer-description {
     color: #424242;
     text-align: center;
@@ -224,11 +311,21 @@ main {
     }
 
     nav,
+    .features,
     .teams-container,
     .facts-card-container {
         flex-direction: column;
         padding: 0;
         text-align: center;
+    }
+    .features{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .feature-img img{
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
     }
 
     .sponsor-img-container {
@@ -245,11 +342,13 @@ main {
         margin-top: 0;
         text-align: center;
     }
-    .footer-area{
+
+    .footer-area {
         margin: 10px;
         padding: 30px;
     }
-    .footer-description{
+
+    .footer-description {
         margin: 0;
         padding: 10px;
         align-items: center;
@@ -264,10 +363,21 @@ main {
     }
 
     nav,
+    .features,
     .teams-container {
         flex-direction: column;
         padding: 0;
     }
+    .features{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .feature-img img{
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
 
     .teams-content {
         text-align: center;
@@ -284,11 +394,12 @@ main {
         text-align: center;
     }
 
-    .footer-description{
+    .footer-description {
         margin: 0;
         padding: 0px;
     }
-    .footer-area{
+
+    .footer-area {
         margin: 10px;
         padding: 30px;
     }
